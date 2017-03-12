@@ -1,0 +1,102 @@
+/* Logo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.logo {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.secure {
+  margin-top: 10px;
+}
+
+/* Display digi logo to the right and display none on mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.right {
+  text-align: right;
+}
+
+.digi {
+  height: 100px;
+  width: 100px;
+}
+
+/* Modals
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Modals Paypal
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.closePayPal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closePayPal:hover,
+.closePayPal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeAliPay {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Modal Alipay
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.closeAliPay:hover,
+.closeAliPay:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Query
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 480px) {
+  /* Payment logos will increase size to make it easier to click on mobile
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .imagesmobile {
+        height: 150%;
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+  /* Digi logo to not appear on mobile
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .digi {
+      display: none;
+    }
+}
