@@ -83,35 +83,37 @@
                     <input type="image" src="images/gbflag.png" height="" width="100" />
                     <!-- Selecting China flag will trigger the 3rd method for the Javascript show/hide -->
                     <input type="image" src="images/chinaflag.png" name="toggler" class="china" value="3" id="rdb3" height="" width="100" />
-                    <div class="twelve columns">
+                </div>
+            </div>
+            <hr>
+        </section>
 
-                        <!-- Find my location for country detection
-                      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <!-- Gather location code supplied by w3schools. https://www.w3schools.com/html/html5_geolocation.asp
-                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <button onclick="getLocation()">Find my location</button>
+        <!-- Delivery / Billing
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-                        <p id="demo"></p>
-
-                        <script>
-                            var x = document.getElementById("demo");
-
-                            function getLocation() {
-                                if (navigator.geolocation) {
-                                    navigator.geolocation.getCurrentPosition(showPosition);
-                                } else {
-                                    x.innerHTML = "Geolocation is not supported by this browser.";
-                                }
-                            }
-
-                            function showPosition(position) {
-                                x.innerHTML = "Latitude: " + position.coords.latitude +
-                                    "<br>Longitude: " + position.coords.longitude;
-                            }
-                        </script>
-                        <!-- End code for script
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                    </div>
+        <section id="delivery" role="delivery">
+            <div class="row">
+                <div class="two columns">
+                    2)
+                </div>
+                <div class="ten columns">
+                    <h5>Please enter your delivery address</h5>
+                    <form>
+                        <div class="row">
+                            <div class="six columns">
+                                <label for="Title">Title</label>
+                                <input class="u-full-width" type="email" placeholder="Title">
+                                <label for="Title">First Name</label>
+                                <input class="u-full-width" type="email" placeholder="First Name">
+                                <label for="Title">Last Name</label>
+                                <input class="u-full-width" type="email" placeholder="Last Name">
+                                <label for="Title">Street Addres</label>
+                                <input class="u-full-width" type="email" placeholder="Street Address">
+                                <label for="Title">Postcode</label>
+                                <input class="u-full-width" type="email" placeholder="Postcode">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <hr>
@@ -123,7 +125,7 @@
         <section id="payment" role="payment">
             <div class="row">
                 <div class="two columns">
-                    2)
+                    3)
                 </div>
                 <div class="five columns">
                     <h5>Select your payment method</h5>
@@ -143,7 +145,7 @@
                     <div id="blk-1" class="toHide" style="display:none">
                         <form>
                             <div class="row">
-                              <!-- Card number label and form
+                                <!-- Card number label and form
                               –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                                 <div class="six columns">
                                     <label for="cardNumberInput">Card Number</label>
@@ -153,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                              <!-- Name on card label and form
+                                <!-- Name on card label and form
                               –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                                 <div class="six columns">
                                     <label for="nameOnCard">Name on card</label>
@@ -163,7 +165,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                              <!-- Expiry date label and form
+                                <!-- Expiry date label and form
                               –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                                 <div class="four columns">
                                     <label for="expiryDate">Expiry Date</label>
@@ -202,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                              <!-- CV2 label and form
+                                <!-- CV2 label and form
                               –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                                 <div class="six columns">
                                     <label for="cv2">CV2</label>
@@ -211,15 +213,45 @@
                                     <input type="text" class="form" placeholder="CV2" id="cv2Input">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="twelve columns">
-                                    <button class="button-primary">Confirm Order</button>
-                                </div>
-                            </div>
                         </form>
                     </div>
                 </div>
             </div>
+        </section>
+        <hr>
+        <section id="confirm" role="confirm">
+            <div class="row">
+                <div class="two columns">
+                    4)
+                </div>
+                <div class="ten columns">
+                    <h5>Is billing address different?</h5>
+                    <button class="button-primary" name="toggler" value="5" id="rdb5">Yes</button>
+                    <div id="blk-5" class="toHide" style="display:none">
+                        <form>
+                            <div class="row">
+                                <div class="six columns">
+                                    <label for="Title">Title</label>
+                                    <input class="u-full-width" type="email" placeholder="Title">
+                                    <label for="Title">First Name</label>
+                                    <input class="u-full-width" type="email" placeholder="First Name">
+                                    <label for="Title">Last Name</label>
+                                    <input class="u-full-width" type="email" placeholder="Last Name">
+                                    <label for="Title">Street Addres</label>
+                                    <input class="u-full-width" type="email" placeholder="Street Address">
+                                    <label for="Title">Postcode</label>
+                                    <input class="u-full-width" type="email" placeholder="Postcode">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <button class="button-primary">Confirm Order</button>
+                        </div>
+                    </div>
+                </div>
         </section>
 
 
@@ -255,67 +287,67 @@
             </div>
 
         </div>
-    </div>
-    <!-- close container -->
+        </div>
+        <!-- close container -->
 
-    <!-- Script for modals
+        <!-- Script for modals
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <script>
-        // Get the modal Paypal
-        var modalPayPal = document.getElementById('myModalPayPal');
+        <script>
+            // Get the modal Paypal
+            var modalPayPal = document.getElementById('myModalPayPal');
 
-        // Get the button that opens the modal
-        var btnPayPal = document.getElementById("myBtnPayPal");
+            // Get the button that opens the modal
+            var btnPayPal = document.getElementById("myBtnPayPal");
 
-        // Get the <span> element that closes the modal
-        var spanPayPal = document.getElementsByClassName("closePayPal")[0];
+            // Get the <span> element that closes the modal
+            var spanPayPal = document.getElementsByClassName("closePayPal")[0];
 
 
-        // When the user clicks on the button, open the modal
-        btnPayPal.onclick = function() {
-            modalPayPal.style.display = "block";
-        }
+            // When the user clicks on the button, open the modal
+            btnPayPal.onclick = function() {
+                modalPayPal.style.display = "block";
+            }
 
-        // When the user clicks on <span> (x), close the modal
-        spanPayPal.onclick = function() {
-            modalPayPal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
+            // When the user clicks on <span> (x), close the modal
+            spanPayPal.onclick = function() {
                 modalPayPal.style.display = "none";
             }
-        }
 
-        // Get the modal Alipay
-        var modalAliPay = document.getElementById('myModalAliPay');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modalPayPal.style.display = "none";
+                }
+            }
 
-        // Get the button that opens the modal
-        var btnAliPay = document.getElementById("myBtnAliPay");
+            // Get the modal Alipay
+            var modalAliPay = document.getElementById('myModalAliPay');
 
-        // Get the <span> element that closes the modal
-        var spanAliPay = document.getElementsByClassName("closeAliPay")[0];
+            // Get the button that opens the modal
+            var btnAliPay = document.getElementById("myBtnAliPay");
+
+            // Get the <span> element that closes the modal
+            var spanAliPay = document.getElementsByClassName("closeAliPay")[0];
 
 
-        // When the user clicks on the button, open the modal
-        btnAliPay.onclick = function() {
-            modalAliPay.style.display = "block";
-        }
+            // When the user clicks on the button, open the modal
+            btnAliPay.onclick = function() {
+                modalAliPay.style.display = "block";
+            }
 
-        // When the user clicks on <span> (x), close the modal
-        spanAliPay.onclick = function() {
-            modalAliPay.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
+            // When the user clicks on <span> (x), close the modal
+            spanAliPay.onclick = function() {
                 modalAliPay.style.display = "none";
             }
-        }
-    </script>
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modalAliPay.style.display = "none";
+                }
+            }
+        </script>
 </body>
 
 </html>
